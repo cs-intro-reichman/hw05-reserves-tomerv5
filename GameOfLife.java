@@ -15,7 +15,7 @@ public class GameOfLife {
 		//int i = Integer.parseInt(args[1]);
 		//int j = Integer.parseInt(args[2]);
 		//test2("line.dat", 2, 3);
-		//test3("pulsar.dat", 3);
+		//test3("line.dat", 3);
 		play(fileName);
 		
 	}
@@ -87,10 +87,12 @@ public class GameOfLife {
 	// Uses the cellValue(board,i,j) function to compute the value of each 
 	// cell in the new board. Returns the new board.
 	public static int[][] evolve(int[][] board) {
-		int [][] newBoard = new int[board.length][board[0].length];
-		for (int i = 1; i < board.length - 1; i++)
+		int rows = board.length;
+		int cols = board[0].length;
+		int [][] newBoard = new int[rows][cols];
+		for (int i = 1; i < rows - 1; i++)
 		{ 
-			for (int j = 1; j < board[0].length - 1; j++) 
+			for (int j = 1; j < cols - 1; j++) 
 			{
 			   newBoard[i][j] = cellValue(board, i, j);
 			}
