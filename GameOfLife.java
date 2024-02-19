@@ -149,7 +149,7 @@ public class GameOfLife {
     public static void print(int[][] board) {
 		for (int i = 1; i < board.length - 1; i++) { 
 			for (int j = 1; j < board[0].length - 1; j++) {
-				System.out.printf("%3s", board[i][j]);
+				System.out.printf("%4s", board[i][j]);
 			}
 			System.out.println();
 		}
