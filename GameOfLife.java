@@ -15,8 +15,8 @@ public class GameOfLife {
 		//int i = Integer.parseInt(args[1]);
 		//int j = Integer.parseInt(args[2]);
 		//test2("line.dat", 2, 3);
-		test3("line.dat", 3);
-		//play(fileName);
+		//test3("line.dat", 3);
+		play(fileName);
 		
 	}
 	
